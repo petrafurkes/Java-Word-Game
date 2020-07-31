@@ -1,0 +1,28 @@
+# Java-Word-Game
+Java Word Game, Software Development module project 
+
+An application that allows 2 users to play the “Java Words Game”. 
+“Java Words Game” is a turn-based game, where the players take turns to provide one word at a time according to the rules of the game. 
+
+A game of “Java Words Game” works as follows: 
+• At the start of a game, each of the two users is given N lives, and each of them starts the game with zero points. 
+The game should display the number of lives the players received. In addition, the game should inform the players how they can acquire points.
+• A game is formed from multiple rounds. 
+Per round: 
+  o At the start of each round, the game (i.e. computer) randomly selects one letter from the English alphabet and displays the letter to the players. 
+  o First, the first player enters a word that begins with the letter which has been randomly selected at the beginning of that round. The word has to be formed from at least 3 letters. 
+  Input validation is required according to the rules. 
+  o Second, the second player enters a word that begins with the last two letters of the last word provided by the other player. The word has to be formed from at least 3 letters. 
+  Input validation is required according to the rules. 
+  o Next, the first player enters a word that begins with the last two letters of the last word provided by the other player. The word has to be formed from at least 3 letters.    
+  Input validation is required according to the rules. 
+  o The round continues with the players taking turns and entering a word according to the rules specified above. Each time a player provides a valid word, 
+  the player receives points according to the rule for awarding points. Please see below the section named Instructions and Checklist for details about the rule you have to implement. 
+  o A round ends when a player is not able to provide a word that begins with the last two letters of the word previously entered by the other player. 
+  A player shows that he/she cannot provide such a word when he/she enters a “-“. Note that the player may not be able to provide a word either because he/she does not know a word 
+  that begins with the last two letters of the last word provided by the other player or because such a word may not exist (i.e. there is no word that begins with those 2 letters). 
+  At that time, the player loses one life, and the other player will start the next round. 
+• The game is played as described above until one of the players loses all the lives allocated by the game. The winner of the game is the user who still has lives left at the end of the game. 
+• At the end of the game, the game displays who the winner is, and the number of points received by each player. 
+Rule to award points: The player receives the same amount of points as the number of characters in the word excluding the letters ‘a’, ‘e’ and ‘o’. 
+Rule to play multiple games: Ask the player after each game whether they would like to play another game. If they answer yes, the game should start again, otherwise the application ends. 
